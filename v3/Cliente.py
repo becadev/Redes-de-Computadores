@@ -22,7 +22,7 @@ class Cliente:
             tupla = ast.literal_eval(msg.decode("utf-8"))  # Usando ast.literal_eval
 
             return cliente[0], int(tupla[1])  # Retorna o ip e a porta como tupla (str, int)
-
+          
     def enviar_info(self):
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
